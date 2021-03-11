@@ -1,6 +1,6 @@
 # JavaScript Foundations
 
-Each exercise emphasizes the fundamentals of object oriented programming in JavaScript.
+This is a repo copied from Turing School of Software & Design. It is designed to help one establish a good working base in JavaScript code, using OOP.
 
 ## Installation Steps
 
