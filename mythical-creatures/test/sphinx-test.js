@@ -7,6 +7,8 @@ describe('Sphinx', () => {
   });
 
   it('should have no name', () => {
+    const sphinx = new Sphinx();
+    assert.equal(sphinx.name, null);
     // instantiate a Sphinx object with no arguments
 
     // assert that the spinx's name is null
