@@ -44,7 +44,7 @@ describe('Golf Course', function () {
 
     golfCourse.checkInGroup(group2);
     assert.equal(golfCourse.openings, 3);
-    assert.deepEqual(golfCourse.currentlyPlaying, ['Bridget', 'Joanna', 'Kevin', 'Ted', 'Pat']);
+    assert.deepEqual(golfCourse.currentlyPlaying, ['Kevin', 'Ted', 'Pat', 'Bridget', 'Joanna']);
   });
 
   it('should not accept golfers if there is no room available', function () {
