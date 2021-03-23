@@ -11,17 +11,35 @@ class SkatePark {
     this.occupants = [];
   }
   admit(skater) {
-    if(this.isPrivate && skater.money >= this.cost && this.occupants.length < 3) {
-      skater.money -= this.cost;
+    if(this.canAdmit(skater)) {
       this.occupants.push(skater);
-      return `Welcome to ${this.name}, the cost will be $${this.cost}.00.`
-    } else if(!this.isPrivate && this.occupants.length < 3) {
-      this.occupants.push(skater);
-      return `Welcome to the free ${this.name} Skatepark!`
-    } else if(skater.money < this.cost && this.occupants.length < 3){
-      return `Sorry, you don't have enough money.`
+      return this.greetSkater();
     } else {
-      return `Sorry, we are at max capacity. Thank you for understanding.`
+      return this.sadGreeting();
+    }
+  }
+  canAdmit(skater) {
+    if(skater.money >= this.cost && this.occupants.length < 3) {
+      skater.money -= this.cost;
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  greetSkater() {
+    if(this.isPrivate) {
+      return `Welcome to ${this.name}, the cost will be $${this.cost}.00.`;
+    } else {
+      return `Welcome to the free ${this.name} Skatepark!`;
+    }
+  }
+
+  sadGreeting() {
+    if(this.occupants < 3) {
+      return "Sorry, you don't have enough money.";
+    } else {
+      return 'Sorry, we are at max capacity. Thank you for understanding.';
     }
   }
 }
