@@ -11,7 +11,9 @@ class Skater {
     if(!this.tricks[trick]) {
       this.frustration += 1;
       if(this.learning[trick]) {
-        this.learning[trick] += 1 || this.learning[trick] = 1;
+        this.learning[trick] += 1;
+      } else {
+        this.learning[trick] = 1;
       }
     }
     if(this.learning[trick] >= 3) {
