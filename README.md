@@ -41,7 +41,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [X] 🛹 [Skate Park](./skate-park)
 - [X] 🧶 [Crafting](./crafting)
 - [X] ⛷ [Ski Lift](./ski-lift)
-- [ ] ⛄️ [Snowman](./do-you-wanna-build-a-snowman)
+- [X] ⛄️ [Snowman](./do-you-wanna-build-a-snowman)
 - [ ] 🚀 [Spaceport](./spaceport)
 - [ ] 🎃 [Trick or Treat](./trick-or-treat)
 - [ ] 🍔 [Lunch Box](./lunchbox)
