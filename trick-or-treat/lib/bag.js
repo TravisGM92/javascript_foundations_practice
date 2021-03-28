@@ -13,6 +13,10 @@ class Bag {
     this.candies.forEach((candy) => candy.type == name ? result = true : 'no');
     return result;
   }
+  eatCandy() {
+    this.count -= 1;
+    this.candies.shift();
+  }
 }
 
 module.exports = Bag;
